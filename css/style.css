@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --CoolGray: hsl(231, 11%, 63%);
+  --LightGray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+  --DarkBlue: hsl(213, 96%, 18%);
+  --LightDark: hsl(213, 96%, 29%);
+  --purple: #5038ed;
+  --gradient: #9181f4;
+  --PastelBlue: #f0edff;
+  --background: #cbc3fa;
+  --red: hsl(354, 84%, 57%);
+  --text-clr: #000000;
+  --primary-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+label {
+  color: var(--DarkBlue);
+}
+
+.form-wrapper {
+  display: grid;
+  place-items: center;
+  padding: 0.563rem 1rem;
+  position: relative;
+}
+
+.form-title {
+  text-align: center;
+}
+.form-title h3 {
+  text-transform: uppercase;
+  font-size: 1.875;
+  font-weight: bold;
+}
+form {
+  width: 364px;
+  display: grid;
+  place-items: center;
+}
+.form-group {
+  padding: 0.563rem 0 0.563rem 0;
+  position: relative;
+  width: 100%;
+}
+.form-group > i {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 0.75rem;
+  bottom: 23px;
+}
+
+.inputField {
+  width: 100%;
+  font-size: 0.99rem;
+  border-radius: 0.5rem;
+  padding: 0 1rem 0 2.75rem;
+  border: none;
+  height: 3.25rem;
+  background: var(--PastelBlue);
+}
+
+input:focus {
+  outline: none;
+}
+.darkBtn {
+  border: none;
+  color: var(--White);
+  margin-top: 0.95rem;
+  padding: 1rem 2rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #9181f4, #402dbe);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-wrapper > span {
+  position: relative;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.form-wrapper > span:before {
+  content: "";
+  position: absolute;
+  top: 54%;
+  left: -50px;
+  right: -50px;
+  height: 1px;
+  background-color: var(--background);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.errors {
+  color: red;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.registerWrap {
+  width: 728px;
+  /* width: 100%; */
+}
+.register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+table {
+  height: 200px;
+}
+
+.tdTitle {
+  min-width: 100px;
+  font-weight: 600;
+}
+.midTd {
+  min-width: 16px;
+}
+.cta-links {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.cta-links > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.cta-links > a > i {
+  font-size: 1.25rem;
+}
+
+.cta-links > a.del {
+  background: var(--red);
+}
+
+.swal2-icon span {
+  margin: 0 !important;
+}
+
+/*
+===
+Eye
+===
+*/
+
+.form-group > button {
+  position: absolute;
+  right: 14px;
+  bottom: 27px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.passwordShower {
+  display: flex;
+  place-items: center;
+  gap: 6px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.passwordShower > label {
+  padding: 0;
+  cursor: pointer;
+}
